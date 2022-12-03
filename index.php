@@ -1,23 +1,13 @@
-<?php 
-// index.php
-session_start();
-
-// Si l'utilisateur est connecté, on récupère son identité via la session.
-$identity = null;
-if (isset($_SESSION['identity'])) {
-    $identity = $_SESSION['identity'];
-}
-?>
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page d'accueil</title>
-    </head>
-    <body>
-        <h1>Page d'accueil</h1>
-        <?php if ($identity==null): ?>
-        <a href="login.php">Connexion</a>
-        <?php else: ?>
-        <strong>Bienvenue, <?= $identity ?></strong> <a href="logout.php">Déconnexion</a>
+<head>
+<title>Exemple</title>
+</head>
+<body>
 
+<?php
+echo "Bonjour, je suis un script PHP !";
+?>
+
+</body>
+</html>
